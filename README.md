@@ -54,8 +54,8 @@ This project currently have 2 end points:
 /restaurants ( Get & Post )
 /restaurants/filters (Post)
 
-## Additional Video for documentation
+## VIDEO DOCUMENTATION
 
-// to do 
+https://share.vidyard.com/watch/kGJNnt2D3z2ehPcCfWijgs?
 
 
