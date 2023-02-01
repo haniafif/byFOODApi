@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 @Valid
 public record DataRegisterRestaurant(
-
         @NotBlank
         String name,
         @NotNull

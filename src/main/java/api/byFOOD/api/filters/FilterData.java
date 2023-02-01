@@ -1,8 +1,5 @@
 package api.byFOOD.api.filters;
 
-
-
-
 public record FilterData(
         String nameToMatch,
 

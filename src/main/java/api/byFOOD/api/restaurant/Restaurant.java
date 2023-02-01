@@ -1,5 +1,4 @@
 package api.byFOOD.api.restaurant;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -12,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Restaurant {
+public class Restaurant{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;

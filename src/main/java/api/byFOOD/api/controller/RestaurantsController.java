@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.*;
 public class RestaurantsController {
     @Autowired
     private RestaurantRepository repository;
-    @CrossOrigin(origins = "http://127.0.0.1:5173")
+    @CrossOrigin(origins = {"http://127.0.0.1:5173","https://your-best-meal.vercel.app"} )
     @PostMapping
     @Transactional
     public void cadastrar(@RequestBody @Valid DataRegisterRestaurant data){
         repository.save(new Restaurant(data));
     }
-    @CrossOrigin(origins = "http://127.0.0.1:5173")
+    @CrossOrigin(origins = {"http://127.0.0.1:5173","https://your-best-meal.vercel.app"} )
     @GetMapping
     public Page<Restaurant> listRestaurant(Pageable pagination){
         return repository.findAll(pagination);
